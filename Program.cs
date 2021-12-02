@@ -1,5 +1,6 @@
 ﻿using AdventOfCode2021.Day1;
+using AdventOfCode2021.Day2;
 
-new PuzzleDay1("Day1/Input1.txt").SolvePart2();
+new PuzzleDay2("Day2/Input.txt").SolvePart2();
 
-Console.ReadKey();
+Console.Read();
