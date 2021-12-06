@@ -14,7 +14,9 @@ namespace AdventOfCode2021
             Lines = File.ReadAllLines(inputPath);
         }
 
-        public abstract void SolvePart1();
-        public abstract void SolvePart2();
+        public virtual void SolvePart1() { }
+        public virtual void SolvePart2() { }
+        public virtual Task SolvePart1Async() { return Task.CompletedTask; }
+        public virtual Task SolvePart2Async() { return Task.CompletedTask; }
     }
 }
