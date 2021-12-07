@@ -4,9 +4,10 @@ using AdventOfCode2021.Day3;
 using AdventOfCode2021.Day4;
 using AdventOfCode2021.Day5;
 using AdventOfCode2021.Day6;
+using AdventOfCode2021.Day7;
 
 
-await new PuzzleDay6("Day6/Input.txt").SolvePart2Async();
+new PuzzleDay7("Day7/Input.txt").SolvePart2();
 
 try
 {
