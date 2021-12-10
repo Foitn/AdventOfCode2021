@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCode2021.Day8
+namespace AdventOfCode2021.Day9
 {
     internal class PuzzleDay9 : Puzzle
     {
