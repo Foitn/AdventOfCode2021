@@ -29,7 +29,7 @@ namespace AdventOfCode2021.Day9
                 for (int j = 0; j < depthMap.GetLength(1); j++)
                 {
                     int value = depthMap[i, j];
-                    if (CheckAllNabors(value, i, j, depthMap))
+                    if (CheckAllNeighbors(value, i, j, depthMap))
                     {
                         Console.WriteLine($"Adding value {value} which is located at {i},{j}");
                         totalRiskLevel += value + 1;
@@ -49,7 +49,7 @@ namespace AdventOfCode2021.Day9
                 for (int j = 0; j < depthMap.GetLength(1); j++)
                 {
                     int value = depthMap[i, j];
-                    if (CheckAllNabors(value, i, j, depthMap))
+                    if (CheckAllNeighbors(value, i, j, depthMap))
                     {
                         lowestPoints.Add((i, j));
                     }
@@ -99,17 +99,17 @@ namespace AdventOfCode2021.Day9
             }
         }
 
-        private bool CheckAllNabors(int value, int x, int y, int[,] depthMap)
+        private bool CheckAllNeighbors(int value, int x, int y, int[,] depthMap)
         {
             bool returnable = true;
-            returnable = returnable && CheckNabor(value, x - 1, y, depthMap);
-            returnable = returnable && CheckNabor(value, x + 1, y, depthMap);
-            returnable = returnable && CheckNabor(value, x, y - 1, depthMap);
-            returnable = returnable && CheckNabor(value, x, y + 1, depthMap);
+            returnable = returnable && CheckNeighbor(value, x - 1, y, depthMap);
+            returnable = returnable && CheckNeighbor(value, x + 1, y, depthMap);
+            returnable = returnable && CheckNeighbor(value, x, y - 1, depthMap);
+            returnable = returnable && CheckNeighbor(value, x, y + 1, depthMap);
             return returnable;
         }
 
-        private bool CheckNabor(int value, int x, int y, int[,] depthMap)
+        private bool CheckNeighbor(int value, int x, int y, int[,] depthMap)
         {
             bool returnable;
             if (IsOutOfBounds(x, y, depthMap))
