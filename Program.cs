@@ -9,9 +9,10 @@ using AdventOfCode2021.Day8;
 using AdventOfCode2021.Day9;
 using AdventOfCode2021.Day10;
 using AdventOfCode2021.Day11;
+using AdventOfCode2021.Day12;
 
 
-new PuzzleDay11("Day11/Input.txt").SolvePart2();
+new PuzzleDay12("Day12/Input.txt").SolvePart2();
 
 try
 {
