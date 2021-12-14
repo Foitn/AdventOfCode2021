@@ -11,9 +11,10 @@ using AdventOfCode2021.Day10;
 using AdventOfCode2021.Day11;
 using AdventOfCode2021.Day12;
 using AdventOfCode2021.Day13;
+using AdventOfCode2021.Day14;
 
 
-new PuzzleDay13("Day13/Input.txt").SolvePart2();
+new PuzzleDay14("Day14/Input.txt").SolvePart2();
 
 try
 {
